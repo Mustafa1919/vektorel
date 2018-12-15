@@ -17,13 +17,13 @@ public class DortIslem {
 	
 	public void sayiAl() {
 
-		System.out.print("LÃ¼tfen ilk sayÄ±yÄ± giriniz: ");
+		System.out.print("Lütfen ilk sayýyý giriniz: ");
 		this.sayi1 = this.input.nextInt();
 		
-		System.out.print("LÃ¼tfen ikinci sayÄ±yÄ± giriniz: ");
+		System.out.print("Lütfen ikinci sayýyý giriniz: ");
 		this.sayi2 = this.input.nextInt();
 		
-		System.out.print("LÃ¼tfen iÅŸlem sembolÃ¼nÃ¼ giriniz(+,-,/,*): ");
+		System.out.print("Lütfen iþlem sembolünü giriniz(+,-,/,*): ");
 		this.islem = this.input.next();
 
 		if(this.islem.equals("+"))
@@ -35,33 +35,35 @@ public class DortIslem {
 		else if(this.islem.equals("/"))
 			bolme();
 		else
-			System.out.println("hatalÄ± bir iÅŸlem girdiniz.");
+			System.out.println("hatalý bir iþlem girdiniz.");
 	}
 	
-	public void toplama() {
+	private void toplama() {
 		this.sonuc = this.sayi1 + this.sayi2;
 		toPrint();
 	}
 	
-	public void cikarma() {
+	private void cikarma() {
 		this.sonuc = this.sayi1 - this.sayi2;
 		toPrint();
 	}
 	
-	public void carpma() {
+	private void carpma() {
 		this.sonuc = this.sayi1 * this.sayi2;
 		toPrint();
 	}
 	
-	public void bolme() {
+	private void bolme() {
 		this.sonuc = this.sayi1 / this.sayi2;
 		toPrint();
 	}
 	
 	
 	private void toPrint() {
-		System.out.println("Ä°lk sayÄ± = " + this.sayi1);
-		System.out.println("Ä°kinci sayÄ± = " + this.sayi2);
+		
+		System.out.println("giriþ baþarýlý ");
+		System.out.println("ilk sayý = " + this.sayi1);
+		System.out.println("Ýkinci sayý = " + this.sayi2);
 		System.out.println(this.sayi1 + " " + this.islem + " " + this.sayi2+" = " + this.sonuc);
 	}
 
