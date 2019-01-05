@@ -1,0 +1,83 @@
+git config --global user.name "Mustafa1919" -> kullanıcı adı tanıt
+git config --global user.email "mail adres" ->mail adres tanıt
+
+
+git init -> klasörün git projesi olmasını tanıtmak için 
+
+
+git add (. veya dosya adı) -> ara bölgeye gönderir
+git commit -m 'açıklayıcı mesaj' -> dosyayı depoya gönderir commit eder
+
+
+git status -> dosyaların durumunu gösterir 
+
+
+git diff -> değişiklik yapılan yerleri gösterir daha sonra tekrar klasik yolla depoya aktarım yapılır
+git log -> proje içerisinde yapılan değişiklikleri kimlerin yaptığını ve yazdıkları mesajları gösterir
+
+
+git rm silinecekdosyaadı -> dosya silmek için sildikten sonra commit et
+git rm -r silinecekklasöradı -> dosya silmek için sonra commit et
+
+
+git mv deneme.py deneme1.py -> deneme dosyası adını deneme1 olarak değişir sonrada commit et
+
+
+git mv deneme.py dosyalar/ ->deneme dosyasını dosyalar klasörüne taşır sonrada commit et
+
+
+git checkout -- dosyaadı -> yanlışlıkla çalışma dizininde sildiğimiz dosyadaki verileri geri getirir
+git reset HEAD dosyaadı -> değişikliği yanlışlıkla geçiş bölgesine gönderdiysek ve bu değişikliği geri almak istiyorsak
+			   bu komut kullan ve daha sonra çalışma dizini komutunu kullan
+
+
+git checkout versiyonunhashkodu -- . ->eski versiyonları geri getirme . önemli tamamını getirir dosya ismi yazarsan o
+					sadece o dosyanın getirir daha sonrada commit et
+hashkodu log çıktısında gözükür
+
+
+
+git e kaydettiğimiz verileri github a  gönderme 
+github da repostory oluşturup adresini kopyalıyoruz 
+
+
+git remote add takmaAd adresiyapıştır
+git remote ile bağlantı kontrol edilir 
+
+
+git push -u takmaAd master -> githuba klasörleri ekleme 
+
+
+.gitignore ->github da gözükmesini istemediğin gizlemek istediğin dosyaların isimlerini bu dosyaya yaz
+	     klasör de koyabiliriz klasörismi/* içindeki hepsini alır
+	     içinden tekini hariç hepsi olacaksa !klasörAdı/dosyaAdı
+
+
+git pull -> dosyaları gitten çeker
+
+
+git branch yandal2 -> yenibir yandal oluşturur
+git branch --all -> branch leri gösterir
+git checkout yandal2 -> yandal2 branch ine geçtik
+
+
+yandal2 ile master birleştirmek için önce master dala geç 
+git diff master yandal2 -> aralarındaki farkları listeler
+git merge yandal2 -> birleştirme işlemi sonrada github a atabilirsin 
+
+
+readme dosyası düzenleme 
+
+readme yardım sayfası https://help.github.com/articles/basic-writing-and-formatting-syntax/
+
+#->başlık olduğunu belirtir 1den6 ya kadar derece yapılabilir tek# en büyük ###### en küçük
+**kalın olur** <br/> alt satıra geçer
+*italik olur*
+[link verme](adres)
+![hatada verilen mesaj](tam adres) -> resim ekleme git tavsiye githun içinde resmi yükle adres orayı ver
+
+
+
+
+awesome-java -> java yararlı linkler java yerine istediğin dili/fremework yazabillirsin
+
