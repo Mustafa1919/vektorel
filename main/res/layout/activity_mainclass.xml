@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonSol"
+            android:layout_marginRight="5dp"
+            android:text="@string/myEdiT"
+            style="@style/mystyle"
+            />
+        <Button
+            android:id="@+id/btnB"
+            android:background="@color/buttonSag"
+            style="@style/mystyle"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/myButtoN"
+             />
+        <Button
+            android:id="@+id/btnC"
+            android:background="@color/colorPrimary"
+            style="@style/mystyle"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/myButtoN1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
